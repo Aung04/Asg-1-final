@@ -4,44 +4,86 @@
     <title>Document</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700,900|Work+Sans:300" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="all.css">
     
     
 </head>
 <body>
-    <div class ="logo"><a href="#"><img src ="Images/logo.png"></a>
-    </div>
-    <nav>
-        <ul>
-            <li><a class="active" href="index.html"> Home</a></li>
-            <li><a class="active" href="Member.html"> Member</a></li>
-            <li><a class="active" href="Album.html"> Album</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="nav">
+          <a href="/" class="logo"><img src ="images/logo.png"></a>
     
-
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
     
+          <div class="nav__link hide">
+            <a href="index.html">home</a>
+            <a href="Members1.html">members</a>
+            <a href="Albums1.html">albums</a>
+            <a href="#">services</a>
+          </div>
+        </nav>
+      </header>
 </body>
+
 <body2>
-    <main class="container">
-        <section class="main-video">
-            <video src="videos/Pompeii.mp4" controls autoplay muted></video>
-            <h3 class="title">Pompeii</h3>
-        </section>
+<h3 class="heading">BEST OF BASTILLE</h3>
 
-        <section class="video-playlist">
-            <h3 class="title">Best of Bastille</h3>
-            <p>7 Songs &nbsp;  </p>
-            <div class="videos">
-                
+<div class="container">
 
-                
-                
-            </div>
-            
-        </section>
-        
-    </main>
+    <div class="main-video">
+        <div class="video">
+            <video src="videos/Pompeii.mp4" controls muted autoplay></video>
+            <h3 class="title">01. Pompeii</h3>
+        </div>
+    </div>
+
+    
+
+    <div class="video-list">
+        <div class="vid active">
+            <video src="videos/Pompeii.mp4"muted></video>
+            <h3 class="title">01. Pompeii</h3>
+
+        </div>
+        <div class="vid">
+            <video src="videos/Flaws.mp4"muted></video>
+            <h3 class="title">02. Flaws</h3>
+
+        </div>
+        <div class="vid">
+            <video src="videos/Happier.mp4"muted></video> 
+            <h3 class="title">03. Happier</h3>
+
+        </div>
+        <div class="vid">
+            <video src="videos/Laura Palmer.mp4"muted></video>
+            <h3 class="title">04. Laura Palmer</h3>
+
+        </div>
+        <div class="vid">
+            <video src="videos/Send Them Off!.mp4"muted></video>
+            <h3 class="title">05. Send Them Off!</h3>
+
+        </div>
+        <div class="vid">
+            <video src="videos/Things We Lost In The Fire.mp4"muted></video>
+            <h3 class="title">06. Things We Lost In The Fire</h3>
+
+        </div>
+        <div class="vid">
+            <video src="videos/Bad Blood.mp4"muted></video>
+            <h3 class="title">07. Bad Blood</h3>
+
+        </div>
+
+    </div>
+</div>
     <script src="index.js"></script>
 
 

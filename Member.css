@@ -1,85 +1,194 @@
-   body{
-    margin: 0;
-    padding: 0;
-     
-}
+body2{
+	min-height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
     
-nav{
-    width: 100%;
-    background:url(https://cdn1.umg3.net/684-cdn/cdn/assets/images/new_back.png) ;
-    overflow:auto;
-}
-ul{
-    padding: 0;
-    margin: 0 0 0 150px;
-    list-style:none;
-}
-li{
-    float: left;
-
-}
-.logo img{
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-nav a{
-    width: 100px;
-    display: block;
-    padding: 20px 15px;
-    text-decoration: none;
-    font:"dominatormedium";
-    color: black;
-    text-align: center;
-    font-weight: bold;
-    font-size: 14px;
-}
-nav a:hover {
-    background: white;
-    transition: 0.5s;
-    text-transform: uppercase;
-
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px auto;
+	flex-wrap: wrap;
+
+    
 }
 
-body2 {
-    min-height: 100vh;
-    width: 100%;
-    background-image: url(https://www.theedgesusu.co.uk/wp-content/uploads/2012/12/Other-People-S-Heartache-PT-2-Mixtape-cover-e1472139564443.jpg);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 16px;
+.border{
+	height: 329px;
+	width: 250px;
+	background: transparent;
+	border-radius: 10px;
+	transition: border 1s;
+	position: relative;
 }
 
-.card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 100px
+.border:hover{
+	border: 1px solid #FFF;
 }
 
 .card{
-    width: 325px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0px 2px 4px rgb(0, 0,0,0.2);
-    margin:20px;
-}
-.card img{
-    width: 100%;
-    height: auto;
-
-}
-card-content{
-    padding: 16px;
+	height: 339px;
+	width: 260px;
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+	margin: 1vw;
+	transition: background 0.8s;
     
 }
 
+.card01{
+	background: url('images/Dan\ smith.jpg') center center no-repeat;
+	background-size: 339px;
+	filter: grayscale(100%);
+}
+
+.card01:hover{
+	background: url('images/Dan\ smith.jpg') left center no-repeat;
+	background-size: 339px;
+	filter: grayscale(0%);
+
+}
+
+.card01:hover h2{
+	opacity: 1;
+}
+
+.card01:hover .fa{
+	opacity: 1;
+}
+
+.card02{
+	background: url('images/Will\ Farquarson.jpeg') center center no-repeat;
+	background-size: 339px;
+	filter: grayscale(100%);
+}
+
+.card02:hover{
+	background: url('images/Will\ Farquarson.jpeg') left center no-repeat;
+	background-size: 339px;
+	filter: grayscale(0%);
+}
+
+.card02:hover h2{
+	opacity: 1;
+}
+
+.card02:hover .fa{
+	opacity: 1;
+}
+
+.card03{
+	background: url('images/Kyle.png') center center no-repeat;
+	background-size: 339px;
+	filter: grayscale(100%)
+}
+
+.card03:hover{
+	background: url('images/Kyle.png') left center no-repeat;
+	background-size: 339px;
+	filter: grayscale(0%);
+}
+
+.card03:hover h2{
+	opacity: 1;
+}
+
+.card03:hover .fa{
+	opacity: 1;
+}
+
+.card04{
+	background: url('images/Chris\ wood.jpeg') center center no-repeat;
+	background-size: 339px;
+	filter: grayscale(100%)
+	
+}
+
+.card04:hover{
+	background: url('images/Chris\ wood.jpeg') left center no-repeat;
+	background-size: 339px;
+	filter: grayscale(0%)
+}
+
+.card04:hover h2{
+	opacity: 1;
+}
+
+.card04:hover .fa{
+	opacity: 1;
+}
+.card05{
+	background: url('images/Aung.jpg') center center no-repeat;
+	background-size: 339px;
+	filter: grayscale(100%)
+	
+}
+
+.card05:hover{
+	background: url('images/Aung.jpg') left center no-repeat;
+	background-size: 339px;
+	filter: grayscale(0%)
+}
+
+.card05:hover h2{
+	opacity: 1;
+}
+
+.card05:hover .fa{
+	opacity: 1;
+}
+
+h2{
+	font-family: "Montserrat", sans-serif;
+	color:  black;
+	margin: 3px;
+	opacity: 0;
+	transition: opacity 1s;
+    text-transform: capitalize;
+    font-weight: 100%;
+}
+.fa{
+	opacity: 0;
+	transition: opacity 1s;
+    
+}
+button{
+    border: none;
+    color: darkorange;
+    background: none;
+}
+
+.icons{
+	position: absolute;
+	color: darkorange;
+	height: 130px;
+	top: 200px;
+	width: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+    
+    
+}
+
+@media screen and (max-width: 768px) {
+	.card{
+	   margin-top: 200px;
+	   
+
+	}
+	.container{
+		justify-content: center;
+        
+	}
+  }
