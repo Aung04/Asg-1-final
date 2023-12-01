@@ -1,0 +1,164 @@
+body2{
+	min-height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    
+}
+
+.container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px 200px;
+	flex-wrap: wrap;
+    margin-top: 100px;
+
+
+    
+}
+
+.border{
+	height: 360px;
+	width: 360px;
+	position: relative;
+}
+
+.card{
+	height: 350px;
+	width: 350px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+	margin: 1vw;
+	
+    
+}
+
+.card01{
+	background: url('images/bastille\ item\ 1.webp') center center no-repeat;
+	background-size: 350px;
+	filter: grayscale(0%);
+}
+
+.card01:hover{
+	background: url('images/bastille\ item\ 1.webp') left center no-repeat;
+	background-size: 339px;
+	filter: grayscale(100%);
+
+}
+
+.card01:hover h2{
+	opacity: 1;
+    margin-left: -15px;
+}
+.card01:hover price{
+	opacity: 1;
+}
+
+
+.card02{
+	background: url('images/bastille\ item\ 2.webp') center center no-repeat;
+	background-size: 350px;
+	filter: grayscale(0%);
+}
+
+.card02:hover{
+	background: url('images/bastille\ item\ 2.webp') left center no-repeat;
+	background-size: 339px;
+	filter: grayscale(100%);
+}
+
+.card02:hover h2{
+	opacity: 1;
+}
+
+.card02:hover price{
+	opacity: 1;
+}
+
+.card03{
+	background: url('images/bastille\ item\ 3.webp') center center no-repeat;
+	background-size: 350px;
+	filter: grayscale(0%)
+}
+
+.card03:hover{
+	background: url('images/bastille\ item\ 3.webp') left center no-repeat;
+	background-size: 339px;
+	filter: grayscale(100%);
+}
+
+.card03:hover h2{
+	opacity: 1;
+}
+
+.card03:hover price{
+	opacity: 1;
+}
+
+.card04{
+	background: url('images/bastille\ item\ 4.webp') center center no-repeat;
+	background-size: 350px;
+	filter: grayscale(0%)
+	
+}
+
+.card04:hover{
+	background: url('images/bastille\ item\ 4.webp') left center no-repeat;
+	background-size: 339px;
+	filter: grayscale(100%)
+}
+
+.card04:hover h2{
+	opacity: 1;
+}
+.card04:hover price{
+	opacity: 1;
+}
+
+
+
+h2{
+	font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+	color:  white;
+	opacity: 0;
+	transition: opacity 1s;
+    text-transform: capitalize;
+    font-weight: 100%;
+    text-align: center;
+    margin-top: 300px;
+}
+price{
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+	color: white;
+	opacity: 0;
+	transition: opacity 1s;
+    text-transform: capitalize;
+    font-weight: 100%;
+    margin-top: 300px;
+    margin-left: 145px;
+
+}
+
+
+@media screen and (max-width: 768px) {
+	.card{
+	   margin-top: 200px;
+
+
+	}
+	.container{
+		
+
+        
+        
+	}
+  }
